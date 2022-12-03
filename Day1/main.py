@@ -9,6 +9,8 @@ while True:
         val = 0
     else:
         val = 1
+    # Could also use onboardLED.toggle()
     onboardLED.value(val)
+    print("Val is now: ", val)
     time.sleep(1)
 
