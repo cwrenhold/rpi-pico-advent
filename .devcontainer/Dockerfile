@@ -1,5 +1,7 @@
 FROM mcr.microsoft.com/devcontainers/python:3.11
 
+RUN sudo usermod -a -G dialout vscode
+
 ENV PYTHONUNBUFFERED 1
 
 # [Optional] If your requirements rarely change, uncomment this section to add them to the image.
